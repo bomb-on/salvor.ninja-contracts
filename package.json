@@ -1,0 +1,23 @@
+{
+  "name": "salvor.ninja-contracts",
+  "version": "1.0.0",
+  "description": "Salvor Ninja Contracts",
+  "main": "index.js",
+  "scripts": {
+    "compile": "./node_modules/.bin/hardhat compile",
+    "coverage": "./node_modules/.bin/hardhat coverage",
+    "deploy:testnet": "./node_modules/.bin/hardhat run scripts/deploy.js --network testnet",
+    "deploy:mainnet": "./node_modules/.bin/hardhat run scripts/deploy.js --network mainnet",
+    "flatten": "./node_modules/.bin/hardhat flatten",
+    "test": "./node_modules/.bin/hardhat test",
+    "verify": "./node_modules/.bin/hardhat verify $CONTRACT_ADDRESS --network testnet"
+  },
+  "author": "bomb-on <0nada0@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@openzeppelin/contracts": "^4.9.3",
+    "hardhat": "^2.17.1",
+    "solidity-coverage": "^0.8.4"
+  }
+}
